@@ -9,10 +9,10 @@ namespace SingleResponsibilityPrinciple
         public string Street { get; set; }
         public int ZipCode { get; set; }
         public string City{get;set;}
+        public string Country{get;set;}
         public Guid AccountId {get;set;}
         public string Password {get;set;}
         public string Username {get;set;}
-        
         public void ChangePassword(string newPassword) => Console.WriteLine($"Changed password to {newPassword}");
         public void ChangeAddress(string street, int zipCode, string city) => Console.WriteLine("Changed address");
         public string GetAccountHolderFirstName(Guid accountNumber) => this.FirstName;
