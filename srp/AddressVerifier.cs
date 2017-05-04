@@ -1,12 +1,22 @@
 using System;
+using System.ComponentModel;
 
 namespace SingleResponsibilityPrinciple
 {
     public class AddressVerifier{
-        public bool IsAddressValid(Account account){
-            // NEW CODE -- Check country is in the supported countries.
-            // Why do I care about account?
-            // return postalService.CheckAddress(account.Street, account.City, address.Zipcode);
+        public bool IsAddressValid(Address address, AddressTypeEnum addressType){
+            // You can change this class to AddressVerifierFactory to generate a class based on addressType, etc.
+            // or simply say the following
+            switch (addressType)
+            {
+                case AddressTypeEnum.Customer:
+                // Customer address check
+                break;
+                case AddressTypeEnum.Employee:
+                // Employee..
+                default:
+                throw new InvalidOperationException();            
+            }
             return true;
         }
     }
