@@ -11,6 +11,10 @@ namespace OpenClosedPrinciple
             }
 
             switch(zipCode){
+                case 9:
+                    return "Munih";
+                case 10:
+                    return "Berlin";
                 case 11:
                     return "California";
                 case 12:
