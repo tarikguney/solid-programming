@@ -10,7 +10,7 @@ namespace OpenClosedPrinciple
         }
 
         public static bool IsValidZipCode(int zipCode){
-            if(zipCode < 10){
+            if(zipCode < 5){
                 return false;
             }
             return true;
