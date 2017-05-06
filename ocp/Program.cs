@@ -18,7 +18,7 @@ namespace ocp
                 Console.WriteLine(exception.Message);
             }
             
-            // For the United States
+            // For the Germany
             try{
                 var addressVerifier = new GermanyAddressVerifier();
                 Console.WriteLine(stateFinder.GetStateNameForZipCode(9, addressVerifier));
