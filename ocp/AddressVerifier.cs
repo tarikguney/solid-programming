@@ -5,12 +5,12 @@ namespace OpenClosedPrinciple
 {
     public class AddressVerifier
     {
-        public static bool IsAddressValid(Address address){
+        public virtual bool IsAddressValid(Address address){
            return true; 
         }
 
-        public static bool IsValidZipCode(int zipCode){
-            if(zipCode < 5){
+        public virtual bool IsValidZipCode(int zipCode){
+            if(zipCode < 10){
                 return false;
             }
             return true;

@@ -4,9 +4,9 @@ namespace OpenClosedPrinciple
 {
     public class StateFinder
     {
-        public string GetStateNameForZipCode(int zipCode)
+        public string GetStateNameForZipCode(int zipCode, AddressVerifier verifier)
         {
-            if(!AddressVerifier.IsValidZipCode(zipCode)){
+            if(!verifier.IsValidZipCode(zipCode)){
                 throw new InvalidOperationException($"Invalid ZipCode: {zipCode}");
             }
 
