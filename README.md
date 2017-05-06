@@ -8,6 +8,9 @@ As of writing this description, the video series on SOLID programming has not be
 
 https://www.youtube.com/watch?v=3vmTR0iDO1k&list=PL_Z0TaFYSF3I7zyoHX-ubeSq_l0e2ztjm
 
+## Notes
+
+Please note the that the explanations in the video tutorials are made in Turkish. The English version will come later.
 
 
 
