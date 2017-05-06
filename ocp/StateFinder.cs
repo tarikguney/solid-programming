@@ -16,7 +16,7 @@ namespace OpenClosedPrinciple
                 case 12:
                     return "Utah";
                 default:
-                    throw new InvalidCastException($"No state is found with {zipCode}");
+                    throw new InvalidOperationException($"No state is found with {zipCode}");
             }
         }
     }
