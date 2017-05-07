@@ -7,7 +7,7 @@ namespace lsp
     {
         static void Main(string[] args)
         {
-            var addressService = new AddressService();
+            var addressService = new NewAddressService();
             var address = addressService.GetAddressForUser(25);
             var accountService = new AccountService();
             accountService.ChangeAddress(address);
