@@ -2,8 +2,18 @@ using System;
 
 namespace InterfaceSegregationPrinciple
 {
-    public class Human : IHuman, IOmnivore
+    public class Animal : IAnimal, IOmnivore
     {
+        public void Bark()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Bite()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Eat()
         {
             throw new NotImplementedException();
@@ -15,11 +25,6 @@ namespace InterfaceSegregationPrinciple
         }
 
         public void Sleep()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Talk()
         {
             throw new NotImplementedException();
         }

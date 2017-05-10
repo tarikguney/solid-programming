@@ -1,6 +1,6 @@
 namespace InterfaceSegregationPrinciple
 {
-    public interface IHuman : IOmnivore
+    public interface IHuman
     {
         void Talk();
         void Walk();
