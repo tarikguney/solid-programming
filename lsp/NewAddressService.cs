@@ -8,7 +8,7 @@ namespace LiskovsSubsitutionPrinciple
         public override Address GetAddressForUser(int userId)
         {
             Require.That(() => userId > 10);
-            Require.That(() => userId < 20);
+            Require.That(() => userId < 30);
             // Getting it from a service...
             var address = new Address()
             {
