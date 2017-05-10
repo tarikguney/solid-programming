@@ -10,5 +10,13 @@ namespace InterfaceSegregationPrinciple
         {
             throw new NotImplementedException();
         }
+
+        // This does not look right!
+        public void AddToList(IAnimal animal)
+        {
+            throw new NotImplementedException();
+        }
+
+        // The question is what exactly I need. I need anything that can eat.
     }
 }
