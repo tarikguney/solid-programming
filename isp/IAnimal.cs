@@ -1,8 +1,7 @@
 namespace InterfaceSegregationPrinciple
 {
-    public interface IAnimal
+    public interface IAnimal: IOmnivore
     {
-        void Eat();
         void Bark();
         void Walk();
         void Sleep();
