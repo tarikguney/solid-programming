@@ -2,7 +2,7 @@ using System;
 
 namespace InterfaceSegregationPrinciple
 {
-    public class Human : IHuman, IOmnivore
+    public class Human : IHuman, IOmnivore, IFeedable
     {
         public void Eat()
         {

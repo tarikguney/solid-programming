@@ -2,7 +2,7 @@ using System;
 
 namespace InterfaceSegregationPrinciple
 {
-    public class Animal : IAnimal, IOmnivore
+    public class Animal : IAnimal, IOmnivore, IFeedable
     {
         public void Bark()
         {
@@ -15,6 +15,11 @@ namespace InterfaceSegregationPrinciple
         }
 
         public void Eat()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Feed(string food)
         {
             throw new NotImplementedException();
         }
